@@ -1,0 +1,21 @@
+# Data
+data/raw/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+ml-env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# File
+info.txt
