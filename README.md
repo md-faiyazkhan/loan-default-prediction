@@ -163,6 +163,6 @@ streamlit
 
 ## Author
 
-**MD Faiyaz Khan**  
+**Md Faiyaz Khan**  
 Self-taught ML Engineer | IIT Patna Certified (AI & ML — Intellipaat)  
 [LinkedIn](https://linkedin.com/in/mdfaiyazkhan) | [GitHub](https://github.com/md-faiyazkhan)
