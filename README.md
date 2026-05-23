@@ -6,6 +6,7 @@ A machine learning project that predicts whether a loan application will be appr
 
 ## Project Structure
 
+```bash
 loan-default-prediction/
 │
 ├── data/
@@ -24,6 +25,7 @@ loan-default-prediction/
 │   └── app.py
 │
 └── requirements.txt
+```
 
 ---
 
