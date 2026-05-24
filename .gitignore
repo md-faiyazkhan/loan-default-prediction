@@ -1,6 +1,7 @@
 # Data
 data/raw/
 info/
+.vscode/
 
 # Jupyter
 .ipynb_checkpoints/
