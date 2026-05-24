@@ -29,12 +29,15 @@ Gender = 1 if Gender == "Male" else 0
 Married = 1 if Married == "Yes" else 0
 Education = 1 if Education == "Not Graduate" else 0
 Self_Employed = 1 if Self_Employed == "Yes" else 0
+Property_Area_Semiurban = 1 if Property_Area == "Semiurban" else 0
+Property_Area_Urban = 1 if Property_Area == "Urban" else 0
+
+# Conversion
 ApplicantIncome = ApplicantIncome / 90  # to INR
 CoapplicantIncome = CoapplicantIncome / 90  # to INR
 LoanAmount = (LoanAmount / 1000) / 90  # user input in INR → convert to USD thousands for model
 Loan_Amount_Term = Loan_Amount_Term * 30  # convert to months
-Property_Area_Semiurban = 1 if Property_Area == "Semiurban" else 0
-Property_Area_Urban = 1 if Property_Area == "Urban" else 0
+
 
 input_data = np.array([[
     Gender, Married, Dependents, Education, Self_Employed,
