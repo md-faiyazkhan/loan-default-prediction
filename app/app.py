@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st 
 import numpy as np
 import joblib
 import os 
@@ -19,8 +19,8 @@ Education = st.selectbox("Education", ["Graduate", "Not Graduate"])
 Self_Employed = st.selectbox("Self Employed", ["Yes", "No"])
 ApplicantIncome = st.number_input("Applicant Income", min_value=0)
 CoapplicantIncome = st.number_input("Coapplicant Income", min_value=0)
-LoanAmount = st.number_input("Loan Amount (in ₹)", min_value=0)
-Loan_Amount_Term = st.number_input("Loan Amount Term (in days)", min_value=0)
+LoanAmount = st.number_input("Loan Amount", min_value=0)
+Loan_Amount_Term = st.number_input("Loan Amount Term (in months)", min_value=0)
 Credit_History = st.selectbox("Credit History", [1.0, 0.0])
 Property_Area = st.selectbox("Property Area", ["Rural", "Semiurban", "Urban"])
 
@@ -29,9 +29,12 @@ Gender = 1 if Gender == "Male" else 0
 Married = 1 if Married == "Yes" else 0
 Education = 1 if Education == "Not Graduate" else 0
 Self_Employed = 1 if Self_Employed == "Yes" else 0
+ApplicantIncome = ApplicantIncome / 90  # to INR
+CoapplicantIncome = CoapplicantIncome / 90  # to INR
+LoanAmount = (LoanAmount / 1000) / 90  # user input in INR → convert to USD thousands for model
+Loan_Amount_Term = Loan_Amount_Term * 30  # convert to months
 Property_Area_Semiurban = 1 if Property_Area == "Semiurban" else 0
 Property_Area_Urban = 1 if Property_Area == "Urban" else 0
-LoanAmount = LoanAmount / 1000
 
 input_data = np.array([[
     Gender, Married, Dependents, Education, Self_Employed,
