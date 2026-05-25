@@ -7,7 +7,7 @@ A machine learning project that predicts whether a loan application will be appr
 ## Project Structure
 
 ```bash
-loan-default-prediction/
+loan-default-prediction-v1/
 │
 ├── data/
 │   ├── raw/
@@ -24,6 +24,8 @@ loan-default-prediction/
 ├── app/
 │   └── app.py
 │
+├── .gitignore
+├── README.md
 └── requirements.txt
 ```
 
